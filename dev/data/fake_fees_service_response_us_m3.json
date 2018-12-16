@@ -1,0 +1,36 @@
+[
+	{
+	    "regionCode": "other",
+	    "financeType": "any",
+	    "feeType": "salesTax",
+	    "amount": 300
+	},
+	{
+	    "regionCode": "CA",
+	    "financeType": "lease",
+	    "feeType": "salesTax",
+	    "amount": 550
+	},
+	{
+	    "regionCode": "CA",
+	    "financeType": ["cash","loan"],
+	    "feeType": "salesTax",
+	    "amount": 5000
+	},
+	{
+	    "feeType": "registrationFee",
+	    "regionCode": "CA",
+	    "financeType": "any",
+	    "amount": 590
+	},
+	{
+	    "feeType": "destinationAndDocFee",
+	    "financeType": "cash",
+	    "amount": 1200
+	},	
+	{
+	    "feeType": "acquisitionFee",
+	    "financeType": "lease",
+	    "amount": 695
+	}
+]

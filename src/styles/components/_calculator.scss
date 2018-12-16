@@ -1,0 +1,152 @@
+// calculator component
+
+.tsla-calc-main--container {
+  font-family: $font-family-secondary;
+}
+
+.terms--list {
+  display: block;
+}
+
+.form-item {
+  padding: 10px;
+}
+
+.calc--form-item--label {
+  font-size: $font-size-medium;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.calc-header-medium {
+  font-size: $font-size-header-medium;
+  font-family: $gotham-book;
+}
+
+.calc-header-xlarge {
+  font-size: $font-size-hero-medium;
+}
+
+.calc-header-large {
+  font-size: $font-size-hero-medium;
+}
+
+.calc-disclaimer {
+  color: $calc-gray;
+}
+
+.calc--summary {
+  margin-top: 20px;
+}
+
+.calc--header-centered {
+    text-align: center;
+}
+
+// -------- After Incentives ---------------
+
+.tsla-calc-after-incentives {
+  &--label {
+    text-align: center;
+  }
+}
+
+/**
+ -------- End of after incentives ------------
+*/
+
+
+//------- Editable Estimated Monthly Price component classes ---------------
+
+.tsla-calc-monthly-price {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+
+  &--value {
+    font-size: $font-size-hero-large;
+    color: $base-color;
+  }
+
+  &--edit-icon {
+    -webkit-transform: SCALEX(-1);
+    transform: SCALEX(-1);
+    font-size: 25px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    top: -28px;
+  }
+
+  input {
+    border: 0;
+    width: 40%;
+    text-align: center;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  // TO Turn Off Number Input Spinners(up,down arrow icons)
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.tsla-calc-editable-field {
+  border-bottom: 1px dashed !important;
+  border-radius: 0 !important;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.tsla-edit-icon {
+  -webkit-transform: SCALEX(-1);
+  transform: SCALEX(-1);
+  font-size: 25px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  top: -28px;
+}
+
+// Trade In
+.tsla-calc-tradein_button {
+  margin-left: 10px;
+}
+
+.tsla-form-item:only-child {
+    padding-bottom: 0;
+}
+
+.tsla-calc-tax-incentives--layout {
+  .form-item form-type-select {
+      padding-left: 0;
+  }
+}
+
+
+//--------- End of Editable estimated Monthly Price component -----------
+
+//Fixed header - Edit link
+.tsla-calc-edit {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.tsla-calc-dollar-icon {
+  font-size: 20px;
+  margin: 10px;
+  color: $base-color;
+  font-weight: bold;
+}

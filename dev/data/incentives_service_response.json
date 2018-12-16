@@ -1,0 +1,26 @@
+{
+  "fuelSavings":{
+    "incentiveType": "fuel",
+    "description": "Fuel economy inputs for US m3",
+    "variables": {
+      "months": 60,
+      "toll_savings": null,
+      "distance_per_month": 833.33,
+      "distance": 49999.8,
+      "fuel_efficiency_imperial": 28,
+      "fuel_efficiency_metric": "mpg",
+      "kwh_consumption": 0.237,
+      "supercharger_kwh_price": 0.2,
+      "fuel_price": 2.85,
+      "kwh_price": 0.127,
+      "min_fuel_efficiency": 10,
+      "max_fuel_efficiency": 100,
+      "default_fuel_efficiency": 70,
+      "min_distance_driven": 10,
+      "max_distance_driven": 100,
+      "default_distance_driven": 50,
+      "min_fuel_price": 1,
+      "max_fuel_price": 10
+    }
+  }
+}

@@ -1,0 +1,139 @@
+//general scss
+
+//Todo::  Need to replace this with particles class
+
+.fixed-header-bar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid $separator-gray;
+  padding: 15px;
+}
+
+
+//------ Begin Overriding TDS classes------------
+
+//Todo:: need to remove z-index in tds-core for tsla-switch_group:before
+
+.tsla-switch_group::before {
+  z-index: 0;
+  box-shadow: none;
+  border: 1px solid $separator-gray;
+}
+
+.tsla-switch_group {
+  .tsla-label-name {
+    line-height: 1;
+    font-weight: bold;
+  }
+}
+
+//Overriding Particles .form-select-overlay to remove background color
+.form-select-overlay {
+  background-color: $calc-white;
+}
+
+// Overriding this class to make the label align properly in firefox
+.tsla-label {
+  align-content: stretch;
+}
+
+//Overriding the color of span and label as the  UX design is using a different color other than the one TDS is using
+label,
+span {
+  color: $base-color;
+}
+
+/*
+    Code for fixing range slider background color in firefox
+    TODO:: Need to add this piece of code in TDS tsla-range_slider.css file
+ */
+.tsla-range_slider .tsla-label .tsla-input-container .tsla-input-range::-moz-range-progress {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: var(--tsla-range-slider_track_active_progress);
+  content: '';
+  height: var(--tsla-range_slider_active_track_height);
+  background-color: var(--tsla-range_slider_progress_bg_color);
+  display: var(--tsla-range_slider-progress-display);
+  border-radius: var(--tsla-range_slider_border_radius);
+}
+
+//----------End of Overriding TDS classes-------------
+
+
+
+// class to add top and bottom padding as per per UX design
+.tsla-calc-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+//Todo : Change to particles/tds if it has one
+.tsla-text-center {
+  text-align: center;
+}
+
+.tsla-vertical-br-line {
+  border-left: 1px solid $iso-gray-light-text;
+  padding: 10px 0;
+}
+
+
+.tsla-error {
+  text-align: center;
+  font-size: $font-size-medium;
+  color: $iso-error-color;
+}
+
+
+.tsla-text {
+  &--small {
+    font-size: $font-size-small;
+  }
+
+  &--medium {
+    font-size: $font-size-medium;
+  }
+
+  &--medium-bold {
+    font-size: $font-size-medium;
+    font-weight: bold;
+    color: $base-color;
+  }
+
+  &--medium_plus {
+    font-size: $font-size-medium-plus;
+  }
+
+  &--large {
+    font-size: $font-size-header-large;
+  }
+}
+
+.tsla-panel-card {
+  background-color: $iso-gray-light;
+  border-top: 1px solid $separator-gray;
+  border-bottom: 1px solid $separator-gray;
+}
+
+.tsla-calc-list-unordered {
+  ul > li > label {
+    width: 50%;
+    display: inline-flex;
+  }
+}
+
+.tsla-calc-hr-divider {
+  border-bottom: 1px solid $separator-gray;
+  padding: 15px;
+}
+
+//Temporary class - need to write some helper classes if particles doesn't have one.
+.tsla-pd-20 {
+  padding: 20px;
+}

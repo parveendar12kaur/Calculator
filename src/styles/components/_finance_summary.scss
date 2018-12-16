@@ -1,0 +1,66 @@
+
+.list-item {
+  display: flex;
+  line-height: 1.5em;
+}
+
+.list-item--label {
+  margin-right: .5em;
+  flex: 1;
+  display: flex;
+}
+
+.list-item--value {
+  text-align: right;
+  flex: 0 0 6em;
+}
+
+.list-item--label::after {
+  content: '';
+  flex: 1;
+  position: relative;
+  bottom: 5px;
+  margin-left: .4em;
+}
+
+.list-item--total {
+  font-weight: bold;
+  label, span {color: $black;}
+}
+
+.calc--summary {
+  display: flex;
+}
+
+.calc--summary--internal {
+  border-bottom: 2px dotted $calc-gray;
+}
+
+.calc--summary__title {
+  font-family: $font-family-secondary;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.calc--summary__subtitle {
+  font-family: $font-family-secondary;
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: $calc-gray;
+}
+
+.calc--summary__due-today {
+  font-family: $font-family-secondary;
+  font-weight: normal;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.calc--summary__list {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.calc--summary--col:first-child {
+  flex: .6;
+}

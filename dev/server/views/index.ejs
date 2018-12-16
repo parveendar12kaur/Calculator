@@ -1,0 +1,45 @@
+<!doctype html>
+
+  <head>
+    <title> <%- pageTitle %> </title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=Edge,chrome=1"/>
+
+    <!-- Lets get mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="True" name="HandheldFriendly"/>
+    <meta id="viewport-tag" name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+  </head>
+  <body>
+    <div id="page" class="header-transparent tsla-header-transparent">
+      <div class="content">
+        <div class="outer">
+            <main id="react-client-rendered-container" class="react-root-wrapper">
+              <div id="configurator"></div>
+              <div id="calculator"></div>
+            </main>
+          </div>
+        </div>
+      </div>
+    
+    <%- injections %>
+    <script src="<%- scripts.registry %>"></script>    
+    <script src="<%- scripts.configurator %>"></script>
+    <script src="<%- scripts.calculator %>"></script>  
+ 
+    <script>
+      // example of vanilla javascript listening to store
+      var unsubscribe = window.tesla.reducerRegistry.subscribe(()=>{
+          var state = window.tesla.reducerRegistry.getState('Shared')
+          switch(state.actions.last){
+              case 'PRICE_CHANGE':
+                  console.log('Yay!')
+          }
+          // it works! 
+      })
+    </script>
+
+  </body>
+
+</html>    

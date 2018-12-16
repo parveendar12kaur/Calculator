@@ -1,0 +1,135 @@
+//Sidebar slider
+
+
+.hidden {
+  display: none !important;
+}
+
+.tsla-side-panel {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  outline: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100vh;
+  border-left: 1px solid $calc-dark-gray;
+
+  &--content {
+    width: 580px;
+    height: 100vh;
+    position: absolute;
+    background-clip: padding-box;
+    background-color: $calc-white;
+    outline: 0;
+    overflow: scroll;
+    right: 0;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &--header {
+    padding: 0;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: $calc-white;
+    border-bottom: 1px solid $separator-gray;
+    z-index: 999;
+  }
+
+  &--title {
+    font-size: $font-size-medium-plus;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    width: 80%;
+  }
+
+  &--left_placeholder {
+    float: left;
+    z-index: 1000;
+    position: sticky;
+    background-color: transparent;
+    top: 0;
+    font-size: 40px;
+    //line-height: 60px;
+    left: auto;
+    outline: none;
+    font-weight: 300;
+    cursor: pointer;
+    color: $grey-2;
+    border: 0;
+    margin-left: 20px;
+    width: 10%;
+    text-align: left;
+
+    &:active {
+      outline: 0;
+    }
+
+  }
+
+  &--right_placeholder {
+    float: right;
+    z-index: 1001;
+    position: sticky;
+    background-color: transparent;
+    top: 0;
+    font-size: 40px;
+    line-height: 60px;
+    left: auto;
+    outline: none;
+    font-weight: 300;
+    cursor: pointer;
+    color: $grey-2;
+    border: 0;
+    margin-right: 25px;
+    width: 10%;
+
+    &:active {
+      outline: 0;
+    }
+
+  }
+
+  &--body {
+    //overflow: scroll;
+    //position: relative;
+    //margin: 10px 0;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  // fade-in / fade-out classes
+  &--will_fadein {
+    z-index: 10000;
+    opacity: 1;
+  }
+
+  &--action {
+    padding: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: $calc-white;
+    z-index: 1000;
+  }
+
+}
+
+.side-panel-open {
+  .tsla-side-panel {
+    background-color: transparentize($black, .4);
+  }
+}
+  

@@ -1,0 +1,29 @@
+//tabs component
+
+.tsla-fin-cal-side-panel-header {
+  .tsla-tabs-row {
+    display: flex;
+  }
+
+  .tsla-tabs--labels {
+    display: flex;
+  }
+
+  .tsla-tabs-label {
+    font-size: 21px;
+    padding: 14px 30px;
+  }
+
+  .tsla-tabs-drawer {
+    display: block;
+    padding: 0;
+  }
+}
+
+.tsla-tabs--drawer {
+  color: $black;
+  background-color: $white;
+  display: block;
+  width: 100%;
+  padding: 0;
+}

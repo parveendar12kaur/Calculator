@@ -1,0 +1,80 @@
+<!doctype html>
+
+  <head>
+    <title> Tesla Financial Calculator Proto </title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=Edge,chrome=1"/>
+
+    <!-- Lets get mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="True" name="HandheldFriendly"/>
+    <meta id="viewport-tag" name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <script>
+       var tesla = {
+          registry: {
+            requiredModules: ['Calculator']
+          },
+          env: {
+             m3_lexicon_endpoint: './data/lexicon_marketing_response_us_m3.json',
+             terms_service_endpoint: './data/mock_terms_service_response_us_m3.json',
+             incentives_service_endpoint: './data/mock_incentives_service_response_us_m3.json',
+             fees_service_endpoint: './data/fake_fees_service_response_us_m3.json',      
+             translations: './data/translations.json'
+          }
+       }
+    </script>
+
+
+   <style>
+       #configurator{
+           /*width: 50%;*/
+       }
+      .btn-tertiary {
+          padding: 8px;
+          color: #fff;
+          background-color: #39f;
+          min-width: 100px;
+          border: 0px;
+      }
+   </style>
+  </head>
+  <body>
+    <div id="page" class="header-transparent tsla-header-transparent">
+      <div class="content">
+            <main id="react-client-rendered-container" class="react-root-wrapper">
+                <div class="tsla-flex tsla-flex-gutters tsla-flex--full tsla-flex--large--fit tsla-flex--small--fit">
+                    <div class="tsla-flex-item">
+                        <div id="configurator" style='padding: 20px; margin-top: 20px'>
+                            <h2>Simple JS Configurator</h2>
+                            <div class="form-item form-type-select" style="width: 300px">
+                                <label class="form-label">
+                                    Select vehicle
+                                    <span class="form-select-overlay">
+                                        <select id="carModels" class="form-select"></select>
+                                     </span>
+                                </label>
+
+                            </div>
+
+                            <button class='btn-tertiary' data-id='blue' id="blue">Blue</button>
+                            <button class='btn-tertiary' data-id='red' id="red">Red</button>
+                            <button class='btn-tertiary' data-id='black' id="black">Black</button>
+                            <button class='btn-tertiary' data-id='white' id="white">White</button>
+
+                        </div>
+                    </div>
+                    <div class="tsla-flex-item">
+                        <div id="tsla-fin-calculator"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+      </div>
+
+    <!--This is only for demo purpose -->
+    <script src="./js/internal-calc-demo.js"></script>
+
+  </body>
+
+</html>    

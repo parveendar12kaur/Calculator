@@ -1,0 +1,2253 @@
+{
+    "fees": {},
+    "name": "Marketing US 2018 MARCH",
+    "groups": [
+        {
+            "code": "MODEL",
+            "name": "MODEL",
+            "groups": [],
+            "context": "default",
+            "options": [
+                "$MDL3"
+            ],
+            "required": true,
+            "exclusive": true,
+            "default_options": [
+                "$MDL3"
+            ]
+        },
+        {
+            "code": "SOP",
+            "name": "SOP",
+            "groups": [],
+            "context": "default",
+            "options": [],
+            "required": false,
+            "exclusive": false,
+            "extra_copy": [
+                {
+                    "type": "compare_title",
+                    "content": "Standard Interior"
+                },
+                {
+                    "type": "order_title",
+                    "content": "First Production"
+                },
+                {
+                    "type": "order_description",
+                    "content": "<div><p>The first Model 3 configuration to enter production features a long range battery, rear wheel drive and premium upgrades throughout.</p></div>"
+                }
+            ],
+            "default_options": []
+        },
+        {
+            "code": "FIRST_PRODUCTION",
+            "name": "First Production",
+            "groups": [
+                "BATTERY",
+                "PREMIUM_PACKAGE"
+            ],
+            "context": "default",
+            "options": [],
+            "required": true,
+            "exclusive": false,
+            "extra_copy": [
+                {
+                    "type": "title",
+                    "content": "Model 3 Standard Features"
+                },
+                {
+                    "type": "compare_title",
+                    "content": "Premium Interior"
+                },
+                {
+                    "type": "feature_list.default[0].main_title",
+                    "content": "Safety"
+                },
+                {
+                    "type": "feature_list.default[0].description",
+                    "content": "Model 3 is designed to achieve the highest safety ratings in every category."
+                },
+                {
+                    "type": "features.title",
+                    "content": "Model 3 Standard Features"
+                },
+                {
+                    "type": "feature_list.default[0].items[0]&&feature_list.summary[0].items[2]",
+                    "content": "Automatic Emergency Braking & Side Collision Warning"
+                },
+                {
+                    "type": "feature_list.default[0].items[1]",
+                    "content": "Eight airbags"
+                },
+                {
+                    "type": "feature_list.default[0].items[2]",
+                    "content": "Electronic stability and traction control"
+                },
+                {
+                    "type": "feature_list.default[1].main_title",
+                    "content": "Convenience"
+                },
+                {
+                    "type": "feature_list.default[1].items[0]&&feature_list.summary[0].items[0]",
+                    "content": "15&Prime; touchscreen with onboard maps &amp; navigation"
+                },
+                {
+                    "type": "feature_list.default[1].items[1]",
+                    "content": "Wi-Fi and LTE internet connectivity"
+                },
+                {
+                    "type": "feature_list.default[1].items[2]&&feature_list.summary[0].items[1]",
+                    "content": "Keyless entry and remote climate control with app"
+                },
+                {
+                    "type": "feature_list.default[1].items[3]",
+                    "content": "Voice activated controls"
+                },
+                {
+                    "type": "feature_list.default[1].items[4]",
+                    "content": "60/40 split folding rear seats"
+                },
+                {
+                    "type": "feature_list.default[2].main_title",
+                    "content": "Warranty"
+                },
+                {
+                    "type": "feature_list.default[2].items[0]",
+                    "content": "4 year, 50,000 mile limited vehicle warranty"
+                },
+                {
+                    "type": "feature_list.default[2].items[1]",
+                    "content": "8 year, 100,000 mile battery warranty (Standard)"
+                },
+                {
+                    "type": "feature_list.default[2].items[2]",
+                    "content": "8 year, 120,000 mile battery warranty (Long Range)"
+                },
+                {
+                    "type": "feature_list.detail[0].items[0]",
+                    "content": "Premium heated seating and cabin materials throughout, including open pore wood decor and two rear USBs"
+                },
+                {
+                    "type": "feature_list.detail[0].items[1]",
+                    "content": "12-way, power adjustable front seats, steering column and side mirrors, with custom driver profiles"
+                },
+                {
+                    "type": "feature_list.detail[0].items[2]",
+                    "content": "Premium audio system with more power, tweeters, surround speakers and subwoofer"
+                },
+                {
+                    "type": "feature_list.detail[0].items[3]",
+                    "content": "Tinted glass roof with ultraviolet and infrared protection"
+                },
+                {
+                    "type": "feature_list.detail[0].items[4]",
+                    "content": "Auto dimming, power folding, heated side mirrors"
+                },
+                {
+                    "type": "feature_list.detail[0].items[5]",
+                    "content": "LED fog lamps"
+                },
+                {
+                    "type": "feature_list.detail[0].items[6]",
+                    "content": "Center console with covered storage and docking for two smartphones"
+                },
+                {
+                    "type": "view_details",
+                    "content": "View All Standard Features",
+                    "behavior": [
+                        {
+                            "type": "ACTION",
+                            "content": {
+                                "type": "VIEW_STANDARD_FEATURES"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "description": "Model 3 is designed to achieve the highest safety ratings in every category.",
+            "extra_content": [
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODEL3/UI/m3_specs.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "default_options": []
+        },
+        {
+            "code": "DRIVE_MODE",
+            "name": "Choose Drivetrain",
+            "groups": [],
+            "context": "default",
+            "options": [
+                "$DV2W",
+                "$DV4W"
+            ],
+            "required": true,
+            "exclusive": true,
+            "default_options": [
+                "$DV2W"
+            ]
+        },
+        {
+            "code": "INTERIOR",
+            "name": "Interior",
+            "groups": [],
+            "context": "default",
+            "options": [
+                "$IN3PB"
+            ],
+            "required": true,
+            "exclusive": true,
+            "extra_copy": [
+                {
+                    "type": "feature_list.detail[0].title",
+                    "content": "Premium Interior"
+                },
+                {
+                    "type": "feature_list.detail[0].items[0]",
+                    "content": "Premium heated seating and cabin materials throughout, including open pore wood décor and two rear USBs"
+                },
+                {
+                    "type": "feature_list.detail[0].items[1]",
+                    "content": "12-way, power adjustable front seats, steering column and side mirrors, with custom driver profiles"
+                },
+                {
+                    "type": "feature_list.detail[0].items[2]",
+                    "content": "Premium audio system with more power, tweeters, surround speakers and subwoofer"
+                },
+                {
+                    "type": "feature_list.detail[0].items[3]",
+                    "content": "Tinted glass roof with ultraviolet and infrared protection"
+                },
+                {
+                    "type": "feature_list.detail[0].items[4]",
+                    "content": "Auto dimming, power folding, heated side mirrors"
+                },
+                {
+                    "type": "feature_list.detail[0].items[5]",
+                    "content": "LED fog lamps"
+                },
+                {
+                    "type": "feature_list.detail[0].items[6]",
+                    "content": "Center console with covered storage and docking for two smartphones"
+                }
+            ],
+            "default_options": [
+                "$IN3PB"
+            ]
+        },
+        {
+            "code": "PAINT",
+            "name": "Color",
+            "groups": [],
+            "context": "default",
+            "options": [
+                "$PBSB",
+                "$PPMR",
+                "$PMNG",
+                "$PPSB",
+                "$PPSW",
+                "$PMSS"
+            ],
+            "required": true,
+            "exclusive": true,
+            "extra_copy": [
+                {
+                    "type": "section_title",
+                    "content": "Color & Wheels"
+                }
+            ],
+            "extra_content": [
+                {
+                    "type": "action",
+                    "content": [
+                        {
+                            "type": "hero-update",
+                            "view": "STUD_3QTR"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "bkba": 1,
+                            "type": "image-compositor",
+                            "view": "STUD_3QTR"
+                        }
+                    ]
+                }
+            ],
+            "default_options": [
+                "$PBSB"
+            ]
+        },
+        {
+            "code": "WHEELS",
+            "name": "Wheels",
+            "groups": [],
+            "context": "default",
+            "options": [
+                "$W38B",
+                "$W39B"
+            ],
+            "required": true,
+            "exclusive": true,
+            "extra_content": [
+                {
+                    "type": "action",
+                    "content": [
+                        {
+                            "type": "hero-update",
+                            "view": "STUD_SEAT"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "type": "image-compositor",
+                            "view": "STUD_WHEEL"
+                        }
+                    ]
+                }
+            ],
+            "default_options": [
+                "$W38B"
+            ]
+        },
+        {
+            "code": "AUTOPILOT",
+            "name": "Autopilot",
+            "groups": [],
+            "context": "default",
+            "options": [
+                "$APPB",
+                "$APF2"
+            ],
+            "required": false,
+            "exclusive": false,
+            "extra_copy": [
+                {
+                    "type": "title[0].title",
+                    "content": "Tesla Autopilot"
+                },
+                {
+                    "type": "feature_list.default[0].description[0]",
+                    "content": "All new Tesla vehicles come standard with the most advanced driver assistance capabilities, designed to provide enhanced safety and convenience for a stress-free driving experience."
+                },
+                {
+                    "type": "feature_list.default[0].description[1].main_title",
+                    "content": "Standard Autopilot Features:"
+                },
+                {
+                    "type": "feature_list.default[0].items[0].title",
+                    "content": "Automatic Emergency Braking"
+                },
+                {
+                    "type": "feature_list.default[0].items[0].description",
+                    "content": "Detects objects that the car may impact and applies the brakes accordingly"
+                },
+                {
+                    "type": "feature_list.default[0].items[2].title",
+                    "content": "Side Collision Warning"
+                },
+                {
+                    "type": "feature_list.default[0].items[2].description",
+                    "content": "Warns the driver of potential collisions with obstacles alongside the car"
+                },
+                {
+                    "type": "feature_list.default[0].items[1].title",
+                    "content": "Front Collision Warning"
+                },
+                {
+                    "type": "feature_list.default[0].items[1].description",
+                    "content": "Warns of impending collisions with slower moving or stationary cars"
+                }
+            ],
+            "extra_content": [
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODEL3/UI/ap-header.png",
+                            "type": "image",
+                            "ratio": "slice",
+                            "image_props": {
+                                "x": "-69%",
+                                "y": "-16%",
+                                "width": "180%",
+                                "height": "180%",
+                                "opacity": "0.8"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "POST_SOP",
+            "name": "POST_SOP",
+            "groups": [],
+            "context": "default",
+            "options": [],
+            "required": false,
+            "exclusive": false,
+            "extra_copy": [
+                {
+                    "type": "coming_soon_title",
+                    "content": "Coming soon"
+                },
+                {
+                    "type": "coming_soon_description",
+                    "content": "<div><p>Additional configurations, including the entry level Model 3 without upgrades, will become available as production ramps.</p></div>"
+                },
+                {
+                    "type": "base_35",
+                    "content": "Base $35,000 Vehicle"
+                },
+                {
+                    "type": "fall_17",
+                    "content": "Late '18"
+                },
+                {
+                    "type": "standard_range",
+                    "content": "Standard Battery - 220 Miles (EPA est.)"
+                },
+                {
+                    "type": "premium_upgrade",
+                    "content": "Premium Upgrades optional"
+                },
+                {
+                    "type": "winter_18",
+                    "content": "Mid '18"
+                },
+                {
+                    "type": "all_wheel",
+                    "content": "Dual Motor All-Wheel Drive"
+                },
+                {
+                    "type": "coming_soon_title",
+                    "content": "Coming Soon"
+                }
+            ],
+            "default_options": []
+        },
+        {
+            "code": "BATTERY",
+            "name": "Battery",
+            "groups": [],
+            "context": "default",
+            "options": [
+                "$BT37",
+                "$BT35"
+            ],
+            "required": true,
+            "exclusive": true,
+            "default_options": [
+                "$BT37"
+            ]
+        },
+        {
+            "code": "PREMIUM_PACKAGE",
+            "name": "Premium Package",
+            "groups": [],
+            "context": "default",
+            "options": [
+                "$PRM31"
+            ],
+            "required": true,
+            "exclusive": true,
+            "default_options": [
+                "$PRM31"
+            ]
+        },
+        {
+            "code": "CORE",
+            "name": "Payment",
+            "groups": [],
+            "context": "order_summary",
+            "options": [
+                "$BT37",
+                "$MDL3",
+                "$PRM31"
+            ],
+            "required": false,
+            "exclusive": false
+        },
+        {
+            "code": "OPTIONS",
+            "name": "Options",
+            "groups": [],
+            "context": "order_summary",
+            "options": [
+                "$PBSB",
+                "$PMNG",
+                "$PPSB",
+                "$PPSW",
+                "$W38B",
+                "$W39B",
+                "$APPB",
+                "$APF2"
+            ],
+            "required": false,
+            "exclusive": false
+        },
+        {
+            "code": "REVIEW_ORDER",
+            "name": "REVIEW_ORDER",
+            "groups": [
+                "PAINT",
+                "WHEELS",
+                "AUTOPILOT"
+            ],
+            "context": "order_summary",
+            "options": [],
+            "required": false,
+            "exclusive": false,
+            "extra_copy": [],
+            "default_options": []
+        },
+        {
+            "code": "COLOR_AND_WHEELS",
+            "name": "Color & Wheels",
+            "groups": [
+                "PAINT",
+                "WHEELS"
+            ],
+            "context": "configurator",
+            "options": [],
+            "required": false,
+            "exclusive": false,
+            "long_name": "Color & Wheels",
+            "description": "Color & Wheels",
+            "extra_content": [
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "bkba": 1,
+                            "type": "image-compositor",
+                            "view": "STUD_3QTR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "PACKAGES",
+            "name": "Packages",
+            "groups": [
+                "PREMIUM_PACKAGE"
+            ],
+            "context": "configurator",
+            "options": [],
+            "required": false,
+            "exclusive": false,
+            "extra_copy": [],
+            "description": "Packages",
+            "extra_content": [
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "bkba": 1,
+                            "type": "image-compositor",
+                            "view": "STUD_SEAT",
+                            "ratio": "meet",
+                            "selected_by": {
+                                "or": [
+                                    {
+                                        "on": [
+                                            "tablet",
+                                            "mobile"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "bkba": 1,
+                            "type": "image-compositor",
+                            "view": "STUD_SEAT",
+                            "ratio": "slice"
+                        }
+                    ]
+                }
+            ],
+            "default_options": []
+        },
+        {
+            "code": "STD_PACKAGE",
+            "name": "Standard Equipment",
+            "groups": [
+                "STD_INTERIOR"
+            ],
+            "context": "configurator",
+            "options": [],
+            "required": false,
+            "exclusive": false,
+            "extra_copy": [],
+            "description": "A 15.4” touchscreen display and Airwave dual zone climate control system are standard. A 15.4” touchscreen display and Airwave dual zone climate control system are standard.",
+            "default_options": []
+        },
+        {
+            "code": "STD_INTERIOR",
+            "name": "Standard Interior",
+            "groups": [],
+            "context": "configurator",
+            "options": [
+                "$IN3SB"
+            ],
+            "required": false,
+            "exclusive": true,
+            "extra_copy": [
+                {
+                    "type": "feature_list.detail[0].title",
+                    "content": "Standard Interior"
+                },
+                {
+                    "type": "feature_list.detail[0].items[0]",
+                    "content": "15” touchscreen display"
+                },
+                {
+                    "type": "feature_list.detail[0].items[1]",
+                    "content": "Dual zone climate control system"
+                },
+                {
+                    "type": "feature_list.detail[0].items[2]",
+                    "content": "FM/Internet streaming radio"
+                },
+                {
+                    "type": "feature_list.detail[0].items[3]",
+                    "content": "Textile seating"
+                },
+                {
+                    "type": "feature_list.detail[0].items[4]",
+                    "content": "Center console with open storage and two USB ports"
+                }
+            ],
+            "description": "Standard interior",
+            "default_options": []
+        },
+        {
+            "code": "PREMIUM_PACKAGE",
+            "name": "Premium Upgrades",
+            "groups": [
+                "INTERIOR"
+            ],
+            "context": "configurator",
+            "options": [
+                "$PRM31"
+            ],
+            "required": false,
+            "exclusive": false,
+            "long_name": "Premium Upgrades",
+            "extra_copy": [],
+            "description": "Upgrade your interior with additional features and premium materials.",
+            "extra_content": []
+        },
+        {
+            "code": "BATTERY_AND_DRIVE",
+            "name": "Battery & Drivetrain",
+            "groups": [
+                "BATTERY",
+                "DRIVE_MODE"
+            ],
+            "context": "configurator",
+            "options": [],
+            "required": false,
+            "exclusive": false,
+            "extra_copy": [
+                {
+                    "type": "zero_to_road_limit_units",
+                    "content": "seconds 0-60 mph"
+                },
+                {
+                    "type": "range_units",
+                    "content": "miles range"
+                },
+                {
+                    "type": "top_speed_units",
+                    "content": "mph top speed"
+                }
+            ],
+            "description": "Battery and Drivetrain",
+            "extra_content": [
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODEL3/UI/awd.png",
+                            "type": "image",
+                            "selected_by": {
+                                "and": [
+                                    "$ALL_WHEEL_DRIVE"
+                                ]
+                            }
+                        },
+                        {
+                            "url": "MODEL3/UI/rwd.png",
+                            "type": "image"
+                        }
+                    ]
+                },
+                {
+                    "type": "performance_specs",
+                    "content": [
+                        {
+                            "range": 310,
+                            "units": "imperial",
+                            "top_speed": 140,
+                            "selected_by": {
+                                "and": [
+                                    "$BT37"
+                                ]
+                            },
+                            "zero_to_road_limit": 5.1
+                        },
+                        {
+                            "range": 220,
+                            "units": "imperial",
+                            "top_speed": 130,
+                            "selected_by": {
+                                "and": [
+                                    "$BT35"
+                                ]
+                            },
+                            "zero_to_road_limit": 5.6
+                        }
+                    ]
+                }
+            ],
+            "default_options": []
+        }
+    ],
+    "options": {
+        "$APF2": {
+            "code": "$APF2",
+            "name": "Full Self-Driving Capability",
+            "price": 3000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 3000,
+                    "context": "default"
+                },
+                {
+                    "type": "upgrade",
+                    "value": 4000,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Full Self-Driving Capability",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                },
+                {
+                    "type": "disclaimer",
+                    "content": "Requires Enhanced Autopilot<br/>$4,000 upgrade after delivery"
+                },
+                {
+                    "type": "short_description",
+                    "content": "Model 3 will pilot itself along freeways and automatically park at your destination."
+                },
+                {
+                    "type": "disclaimer_details",
+                    "content": "This functionality is dependent upon extensive software validation and regulatory approval. It is not possible to know exactly when it will be available, as this is highly dependent on local regulatory approval, which may vary widely by jurisdiction."
+                },
+                {
+                    "type": "disclaimer[0]",
+                    "content": "Requires Enhanced Autopilot"
+                },
+                {
+                    "type": "disclaimer[1]",
+                    "content": "$4,000 upgrade if added after delivery"
+                }
+            ],
+            "description": "In the future, Model 3 will be capable of conducting trips with no action required by the person in the driver’s seat.",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "card"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODEL3/UI/sd_img.png",
+                            "type": "image",
+                            "action": [
+                                {
+                                    "type": "PLAY_VIDEO",
+                                    "content": {
+                                        "src": "https://player.vimeo.com/video/192179726?autoplay=1&color=ff0000&title=0&byline=0&portrait=0",
+                                        "type": "video",
+                                        "width": 640,
+                                        "height": 360
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "user_defined_rules": {
+                "set_rules": [
+                    {
+                        "action": "set",
+                        "target": "$APPB"
+                    }
+                ]
+            },
+            "after_delivery_price": 4000,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$APF2"
+                },
+                {
+                    "action": "set",
+                    "target": "$APPB"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$APF2"
+                }
+            ]
+        },
+        "$APPB": {
+            "code": "$APPB",
+            "name": "Enhanced Autopilot",
+            "price": 5000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 5000,
+                    "context": "default"
+                },
+                {
+                    "type": "upgrade",
+                    "value": 6000,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Enhanced Autopilot",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                },
+                {
+                    "type": "short_description",
+                    "content": "In the future, tell Model 3 where to go and it will navigate with no driver intervention."
+                },
+                {
+                    "type": "disclaimer",
+                    "content": "$6,000 upgrade after delivery"
+                },
+                {
+                    "type": "description.main_title[0]",
+                    "content": "Additional features, including:"
+                },
+                {
+                    "type": "description.items[0]",
+                    "content": "Auto lane changing"
+                },
+                {
+                    "type": "description.items[1]",
+                    "content": "Autosteer"
+                },
+                {
+                    "type": "description.items[2]",
+                    "content": "Automatic parking"
+                },
+                {
+                    "type": "description.items[3]",
+                    "content": "Summon"
+                },
+                {
+                    "type": "disclaimer_details",
+                    "content": "This is a driver's assistance feature with the driver responsible for remaining in control of the car at all times. Software has begun rolling out and features will continue to be introduced as validation is completed, subject to regulatory approval."
+                },
+                {
+                    "type": "disclaimer",
+                    "content": "$6,000 upgrade if added after delivery"
+                }
+            ],
+            "description": "<p>Model 3 will match speed to traffic conditions, keep within a lane, automatically change lanes, transition from one freeway to another, exit the freeway and self-park at your destination. This is a driver's assistance feature with the driver responsible for remaining in control of the car at all times.</p> <p>Software has begun rolling out and features will continue to be introduced as validation is completed, subject to regulatory approval.</p>",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "card"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODEL3/UI/autopilot2.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "user_defined_rules": {
+                "unset_rules": [
+                    {
+                        "action": "unset",
+                        "target": "$APF2"
+                    }
+                ]
+            },
+            "after_delivery_price": 6000,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$APPB"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$APPB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$APF2"
+                }
+            ]
+        },
+        "$BT35": {
+            "code": "$BT35",
+            "name": "Standard Battery",
+            "price": 0,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 0,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Standard Battery",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "Late ‘18"
+                }
+            ],
+            "description": "Standard Battery",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "block"
+                        }
+                    ]
+                },
+                {
+                    "type": "future_option",
+                    "content": [
+                        {
+                            "type": true
+                        }
+                    ]
+                }
+            ],
+            "user_defined_rules": {
+                "set_rules": [
+                    {
+                        "action": "unset",
+                        "target": "$BT35"
+                    },
+                    {
+                        "action": "set",
+                        "target": "$BT37"
+                    }
+                ]
+            },
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$BT35"
+                },
+                {
+                    "action": "unset",
+                    "target": "$BT37"
+                },
+                {
+                    "action": "unset",
+                    "target": "$BT35"
+                },
+                {
+                    "action": "set",
+                    "target": "$BT37"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$BT35"
+                },
+                {
+                    "action": "set",
+                    "target": "$BT37"
+                }
+            ]
+        },
+        "$BT37": {
+            "code": "$BT37",
+            "name": "Long Range Battery",
+            "price": 9000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 9000,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Long Range Battery",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                },
+                {
+                    "type": "spec_description",
+                    "content": "310 Miles"
+                },
+                {
+                    "type": "short_description",
+                    "content": "5.6 sec 0-60 mph<br />750 miles free annual Supercharging"
+                },
+                {
+                    "type": "disclaimer",
+                    "content": "Required for first production"
+                },
+                {
+                    "type": "vehicle_details",
+                    "content": "Model 3 Long Range Battery"
+                },
+                {
+                    "type": "feature_list.default[0].items[0]",
+                    "content": "310 mile range"
+                },
+                {
+                    "type": "feature_list.default[0].items[1]",
+                    "content": "0 to 60 mph in 5.1 seconds"
+                },
+                {
+                    "type": "feature_list.default[0].items[2]",
+                    "content": "140 mph top speed"
+                },
+                {
+                    "type": "feature_list.default[0].items[3]",
+                    "content": "170 miles of range in 30 minutes using Tesla's global Supercharger network"
+                }
+            ],
+            "description": "The first Model 3 configuration to enter production will feature our largest battery",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "block"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODEL3/UI/battery@2x.jpg",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$BT37"
+                },
+                {
+                    "action": "unset",
+                    "target": "$BT35"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$BT37"
+                },
+                {
+                    "action": "set",
+                    "target": "$BT35"
+                }
+            ]
+        },
+        "$DV2W": {
+            "code": "$DV2W",
+            "name": "Rear Wheel Drive",
+            "price": 0,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 0,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Rear Wheel Drive",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "Standard"
+                }
+            ],
+            "description": "Rear Wheel Drive",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "block"
+                        }
+                    ]
+                },
+                {
+                    "type": "selected",
+                    "content": [
+                        {
+                            "type": true
+                        }
+                    ]
+                }
+            ],
+            "user_defined_rules": {},
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$DV2W"
+                },
+                {
+                    "action": "unset",
+                    "target": "$DV4W"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$DV2W"
+                },
+                {
+                    "action": "set",
+                    "target": "$DV4W"
+                }
+            ]
+        },
+        "$DV4W": {
+            "code": "$DV4W",
+            "name": "Dual Motor All-Wheel Drive",
+            "price": 0,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 0,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Dual Motor All-Wheel Drive",
+            "extra_copy": [
+                {
+                    "type": "future_option[0]",
+                    "content": "Notify me",
+                    "behavior": [
+                        {
+                            "type": "CONTAINER",
+                            "content": {
+                                "tag": "span"
+                            }
+                        },
+                        {
+                            "type": "ACTION",
+                            "content": {
+                                "type": "NOTIFY_ME"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "future_option[1]",
+                    "content": " when all-wheel drive and standard battery options becomes available.",
+                    "behavior": [
+                        {
+                            "type": "CONTAINER",
+                            "content": {
+                                "tag": "span"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "price_indicator",
+                    "content": "Mid ‘18"
+                }
+            ],
+            "description": "Dual Motor All-Wheel Drive",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "block"
+                        }
+                    ]
+                },
+                {
+                    "type": "future_option"
+                }
+            ],
+            "user_defined_rules": {
+                "set_rules": [
+                    {
+                        "action": "unset",
+                        "target": "$DV4W"
+                    },
+                    {
+                        "action": "set",
+                        "target": "$DV2W"
+                    }
+                ]
+            },
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$DV4W"
+                },
+                {
+                    "action": "unset",
+                    "target": "$DV2W"
+                },
+                {
+                    "action": "unset",
+                    "target": "$DV4W"
+                },
+                {
+                    "action": "set",
+                    "target": "$DV2W"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$DV4W"
+                },
+                {
+                    "action": "set",
+                    "target": "$DV2W"
+                }
+            ]
+        },
+        "$MDL3": {
+            "code": "$MDL3",
+            "name": "Model 3",
+            "price": 35000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 35000,
+                    "context": "default"
+                },
+                {
+                    "type": "reservation_deposit",
+                    "value": 1000,
+                    "context": "default"
+                },
+                {
+                    "type": "order_payment",
+                    "value": 2500,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Model 3",
+            "extra_copy": [
+                {
+                    "type": "learn_more",
+                    "content": "Learn More about Model 3 deliveries"
+                },
+                {
+                    "type": "faq",
+                    "content": "Model 3 FAQs",
+                    "behavior": [
+                        {
+                            "type": "CONTAINER",
+                            "content": {
+                                "tag": "a",
+                                "props": {
+                                    "href": "https://www.tesla.com/support/model-3-reservations-faq",
+                                    "target": "_blank"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "description": "Deliveries are beginning in the US based on date of order and options selected.",
+            "extra_content": [
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODEL3/blurcar_trans.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$MDL3"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$MDL3"
+                },
+                {
+                    "action": "set",
+                    "target": "$MDL3"
+                }
+            ]
+        },
+        "$PBSB": {
+            "code": "$PBSB",
+            "name": "Solid Black",
+            "price": 0,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 0,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Solid Black Paint",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "included"
+                }
+            ],
+            "description": "Solid Black",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "circular"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODELS/UI/ui_swat_col_pbsb.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$PBSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPMR"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMNG"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSW"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMSS"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$PBSB"
+                },
+                {
+                    "action": "set",
+                    "target": "$PBSB",
+                    "operator": "and",
+                    "condition_code": "$PPMR",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PMNG",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PPSB",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PPSW",
+                    "condition_state": "unset"
+                },
+                {
+                    "condition_code": "$PMSS",
+                    "condition_state": "unset"
+                }
+            ]
+        },
+        "$PMNG": {
+            "code": "$PMNG",
+            "name": "Midnight Silver Metallic",
+            "price": 1000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 1000,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Midnight Silver Metallic Paint",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                }
+            ],
+            "description": "Midnight Silver Metallic",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "circular"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODELS/UI/ui_swat_col_pmng.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$PMNG"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PBSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPMR"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSW"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMSS"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$PMNG"
+                },
+                {
+                    "action": "set",
+                    "target": "$PBSB",
+                    "operator": "and",
+                    "condition_code": "$PPMR",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PPSB",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PPSW",
+                    "condition_state": "unset"
+                },
+                {
+                    "condition_code": "$PMSS",
+                    "condition_state": "unset"
+                }
+            ]
+        },
+        "$PMSS": {
+            "code": "$PMSS",
+            "name": "Silver Metallic",
+            "price": 1000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 1000,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Silver Metallic Paint",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                }
+            ],
+            "description": "Silver Metallic",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "circular"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODELS/UI/ui_swat_col_pmss.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$PMSS"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PBSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPMR"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMNG"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSW"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$PMSS"
+                },
+                {
+                    "action": "set",
+                    "target": "$PBSB",
+                    "operator": "and",
+                    "condition_code": "$PPMR",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PMNG",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PPSB",
+                    "condition_state": "unset"
+                },
+                {
+                    "condition_code": "$PPSW",
+                    "condition_state": "unset"
+                }
+            ]
+        },
+        "$PPMR": {
+            "code": "$PPMR",
+            "name": "Red Multi-Coat",
+            "price": 1000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 1000,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Red Multi-Coat Paint",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                }
+            ],
+            "description": "Red Multi-Coat",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "circular"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODELS/UI/ui_swat_col_ppmr.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$PPMR"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PBSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMNG"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSW"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMSS"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$PPMR"
+                },
+                {
+                    "action": "set",
+                    "target": "$PBSB",
+                    "operator": "and",
+                    "condition_code": "$PMNG",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PPSB",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PPSW",
+                    "condition_state": "unset"
+                },
+                {
+                    "condition_code": "$PMSS",
+                    "condition_state": "unset"
+                }
+            ]
+        },
+        "$PPSB": {
+            "code": "$PPSB",
+            "name": "Deep Blue Metallic",
+            "price": 1000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 1000,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Deep Blue Metallic Paint",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                }
+            ],
+            "description": "Deep Blue Metallic",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "circular"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODELS/UI/ui_swat_col_ppsb.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$PPSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PBSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPMR"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMNG"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSW"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMSS"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$PPSB"
+                },
+                {
+                    "action": "set",
+                    "target": "$PBSB",
+                    "operator": "and",
+                    "condition_code": "$PPMR",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PMNG",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PPSW",
+                    "condition_state": "unset"
+                },
+                {
+                    "condition_code": "$PMSS",
+                    "condition_state": "unset"
+                }
+            ]
+        },
+        "$PPSW": {
+            "code": "$PPSW",
+            "name": "Pearl White Multi-Coat",
+            "price": 1000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 1000,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Pearl White Paint",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                }
+            ],
+            "description": "Pearl White",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "circular"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODELS/UI/ui_swat_col_ppsw.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$PPSW"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PBSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPMR"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMNG"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PPSB"
+                },
+                {
+                    "action": "unset",
+                    "target": "$PMSS"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$PPSW"
+                },
+                {
+                    "action": "set",
+                    "target": "$PBSB",
+                    "operator": "and",
+                    "condition_code": "$PPMR",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PMNG",
+                    "condition_state": "unset"
+                },
+                {
+                    "operator": "and",
+                    "condition_code": "$PPSB",
+                    "condition_state": "unset"
+                },
+                {
+                    "condition_code": "$PMSS",
+                    "condition_state": "unset"
+                }
+            ]
+        },
+        "$SC04": {
+            "code": "$SC04",
+            "name": "Supercharger Network Access + Pay-as-you-go",
+            "price": 0,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 0,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Supercharger Network Access + Pay-as-you-go",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                }
+            ],
+            "description": "Supercharger Network Access + Pay-as-you-go",
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$SC04"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$SC04"
+                }
+            ]
+        },
+        "$W38B": {
+            "code": "$W38B",
+            "name": "18’’ Aero Wheels",
+            "price": 0,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 0,
+                    "context": "default"
+                }
+            ],
+            "long_name": "18’’ Aero Wheels",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "included"
+                }
+            ],
+            "description": "18’’ Aero Wheels",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "circular"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODEL3/UI/opt-wheels-18pinwheel.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$W38B"
+                },
+                {
+                    "action": "unset",
+                    "target": "$W39B"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$W38B"
+                },
+                {
+                    "action": "set",
+                    "target": "$W39B"
+                }
+            ]
+        },
+        "$W39B": {
+            "code": "$W39B",
+            "name": "19’’ Sport Wheels",
+            "price": 1500,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 1500,
+                    "context": "default"
+                }
+            ],
+            "long_name": "19’’ Sport Wheels",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                }
+            ],
+            "description": "19’’ Sport Wheels",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "circular"
+                        }
+                    ]
+                },
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODEL3/UI/opt-wheels-19stilette.png",
+                            "type": "image"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$W39B"
+                },
+                {
+                    "action": "unset",
+                    "target": "$W38B"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$W39B"
+                },
+                {
+                    "action": "set",
+                    "target": "$W38B"
+                }
+            ]
+        },
+        "$IN3PB": {
+            "code": "$IN3PB",
+            "name": "Black Interior",
+            "price": 0,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 0,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Black Interior",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "Included"
+                },
+                {
+                    "type": "spec_description",
+                    "content": "Black leather interior"
+                }
+            ],
+            "description": "Black Interior",
+            "extra_content": [
+                {
+                    "type": "asset",
+                    "content": [
+                        {
+                            "url": "MODELS/UI/ui_swat_col_pmng.png",
+                            "type": "image"
+                        }
+                    ]
+                },
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "circular"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$IN3PB"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$IN3PB"
+                },
+                {
+                    "action": "set",
+                    "target": "$IN3PB"
+                }
+            ]
+        },
+        "$PRM31": {
+            "code": "$PRM31",
+            "name": "Premium Upgrades",
+            "price": 5000,
+            "pricing": [
+                {
+                    "type": "base",
+                    "value": 5000,
+                    "context": "default"
+                }
+            ],
+            "long_name": "Premium Upgrades",
+            "extra_copy": [
+                {
+                    "type": "price_indicator",
+                    "content": "optional"
+                },
+                {
+                    "type": "name",
+                    "content": "Premium Upgrades"
+                },
+                {
+                    "type": "short_description",
+                    "content": "Our premium package adds upgraded features throughout Model 3"
+                },
+                {
+                    "type": "more_info",
+                    "content": "Compare to standard interior",
+                    "behavior": [
+                        {
+                            "type": "ACTION",
+                            "content": {
+                                "type": "COMPARE_GROUPS",
+                                "groups": [
+                                    {
+                                        "code": "INTERIOR",
+                                        "context": "default"
+                                    },
+                                    {
+                                        "code": "STD_INTERIOR",
+                                        "context": "configurator"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "feature_list.default[0].main_title",
+                    "content": "Premium Package Includes:"
+                },
+                {
+                    "type": "feature_list.default[0].items[0]",
+                    "content": "Premium heated seating and cabin materials throughout, including open pore wood décor and two rear USBs"
+                },
+                {
+                    "type": "feature_list.default[0].items[1]",
+                    "content": "12-way, power adjustable front seats, steering column and side mirrors, with custom driver profiles"
+                },
+                {
+                    "type": "feature_list.default[0].items[2]",
+                    "content": "Premium audio system with more power, tweeters, surround speakers and subwoofer"
+                },
+                {
+                    "type": "feature_list.default[0].items[3]",
+                    "content": "Tinted glass roof with ultraviolet and infrared protection"
+                },
+                {
+                    "type": "feature_list.default[0].items[4]",
+                    "content": "Auto dimming, power folding, heated side mirrors"
+                },
+                {
+                    "type": "feature_list.default[0].items[5]",
+                    "content": "LED fog lamps"
+                },
+                {
+                    "type": "feature_list.default[0].items[6]",
+                    "content": "Center console with covered storage and docking for two smartphones"
+                },
+                {
+                    "type": "disclaimer",
+                    "content": "Required for first production"
+                }
+            ],
+            "description": "<p>Upgrade your interior with additional features and premium materials.</p><ul><li><span>Premium heated seating and cabin materials throughout, including open pore wood décor, glass roof and four USB ports</span></li><li><span>12-way, power adjustable front seats, steering column and side mirrors, with custom driver profiles</span></li><li><span>Premium audio system with more power, tweeters, surround speakers and subwoofer</span></li></ul>",
+            "extra_content": [
+                {
+                    "type": "shape",
+                    "content": [
+                        {
+                            "type": "descriptive"
+                        }
+                    ]
+                }
+            ],
+            "after_delivery_price": 0,
+            "set_rules": [
+                {
+                    "action": "set",
+                    "target": "$PRM31"
+                }
+            ],
+            "unset_rules": [
+                {
+                    "action": "unset",
+                    "target": "$PRM31"
+                },
+                {
+                    "action": "set",
+                    "target": "$PRM31"
+                }
+            ]
+        }
+    },
+    "base_configuration": [
+        "$BT37",
+        "$PRM31",
+        "$IN3PB",
+        "$PBSB",
+        "$W38B",
+        "$DV2W",
+        "$MDL3"
+    ],
+    "effective_date": "2018-03-15T23:40:00.000Z",
+    "province": "all",
+    "market": "US",
+    "product": "m3",
+    "language": "en",
+    "id": 91
+}

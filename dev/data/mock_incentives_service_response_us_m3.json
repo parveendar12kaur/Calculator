@@ -1,0 +1,138 @@
+[{
+    "incentiveType": "fuel",
+    "description": "Fuel economy inputs for US m3",
+    "amount": 3584,
+    "financeType": "any",
+    "variables": {
+        "months": 60,
+        "toll_savings": null,
+        "distance_per_month": 833.33,
+        "distance": 49999.8,
+        "fuel_efficiency_imperial": 28,
+        "fuel_efficiency_metric": "mpg",
+        "kwh_consumption": 0.237,
+        "supercharger_kwh_price": 0.2,
+        "fuel_price": 2.85,
+        "kwh_price": 0.127,
+        "min_fuel_efficiency": 10,
+        "max_fuel_efficiency": 100,
+        "default_fuel_efficiency": 70,
+        "min_distance_driven": 10,
+        "max_distance_driven": 100,
+        "default_distance_driven": 50,
+        "min_fuel_price": 1,
+        "max_fuel_price": 10
+    }
+}, {
+    "incentiveType": "federal",
+    "rule": "apply_once",
+    "amount": 7500
+}, {
+    "regionCode": "LA",
+    "incentiveType": "regional",
+    "financeType": [
+        "cash",
+        "loan"
+    ],
+    "rule": "apply_once",
+    "amount": 8000,
+    "toggle_amount": {
+        "if": {
+            "option": {
+                "BT60": 6900,
+                "BX60": 8000,
+                "BT70": 8000,
+                "BT85": 9500,
+                "PBT85": 9500,
+                "P85D": 9500,
+                "BTX4": 9500,
+                "BTX6": 2500,
+                "PX4D": 9500,
+                "PX6D": 2500,
+                "BTX5": 2500
+            }
+        }
+    },
+    "long_name": "Louisiana"
+}, {
+
+    "regionCode": "CA",
+    "incentiveType": "regional",
+    "financeType": [
+        "cash",
+        "loan"
+    ],
+    "rule": "apply_once",
+    "amount": 2500,
+    "toggle_amount": null,
+    "long_name": "California"
+}, {
+    "regionCode": "CO",
+    "incentiveType": "regional",
+    "financeType": [
+        "cash",
+        "loan"
+    ],
+    "rule": "apply_once",
+    "amount": 5000,
+    "toggle_amount": null,
+    "long_name": "Colorado"
+}, {
+    "regionCode": "CO",
+    "incentiveType": "regional",
+    "financeType": [
+        "lease"
+    ],
+    "rule": "apply_once",
+    "amount": 2500,
+    "toggle_amount": null,
+    "long_name": "Colorado"
+}, {
+    "regionCode": "DE",
+    "incentiveType": "regional",
+    "financeType": [
+        "cash",
+        "loan",
+        "lease"
+    ],
+    "rule": "apply_once",
+    "amount": 2200,
+    "toggle_amount": null,
+    "long_name": "Delaware"
+}, {
+    "regionCode": "MA",
+    "incentiveType": "regional",
+    "financeType": [
+        "cash",
+        "loan",
+        "lease"
+    ],
+    "rule": "apply_once",
+    "amount": 1000,
+    "toggle_amount": null,
+    "long_name": "Massachusetts"
+}, {
+    "regionCode": "NY",
+    "incentiveType": "regional",
+    "financeType": [
+        "cash",
+        "loan",
+        "lease"
+    ],
+    "rule": "apply_once",
+    "amount": 500,
+    "toggle_amount": null,
+    "long_name": "New York"
+}, {
+    "regionCode": "other",
+    "incentiveType": "regional",
+    "financeType": [
+        "cash",
+        "loan",
+        "lease"
+    ],
+    "rule": "apply_once",
+    "amount": 0,
+    "toggle_amount": null,
+    "long_name": "Other State"
+}]

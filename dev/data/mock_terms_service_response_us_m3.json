@@ -1,0 +1,68 @@
+{
+    "loan":  {
+        "financeType": "loan",
+        "market": "US",
+        "language": "en",
+        "model": "m3",
+        "trim": "p",
+        "product": "m3p",
+        "start_date": "2017-12-07T20:41:50.562111Z",
+        "end_date": null,
+        "defaults": {
+            "downPayment": 5000,
+            "minimumDownPayment": 0,
+            "maximumDownPayment": 15000,
+            "interestRate": 2.99,
+            "termLength": 72,
+            "maximumFinancedAmount": 10000
+        },
+        "programOptions": {
+            "termLength": [
+                48,
+                60,
+                72,
+                84
+            ],
+            "interestRate": [
+                2.99,
+                3.24,
+                3.49
+            ],
+            "interestRateMatrix": [],
+            "residualValueMatrix": []
+        }
+    },
+    "lease": {
+        "financeType": "lease",
+        "market": "US",
+        "language": "en",
+        "model": "m3",
+        "trim": "p",
+        "product": "m3p",
+        "start_date": "2017-12-07T20:41:50.562111Z",
+        "end_date": null,
+        "defaults": {
+            "downPayment": 5000,
+            "minimumDownPayment": 0,
+            "maximumDownPercent": 0.25,
+            "interestRate": 2.99,
+            "termLength": 72,
+            "maximumFinancedAmount": 10000,
+            "distance": 10000
+        },
+        "programOptions": {
+            "termLength": [
+                48,
+                60,
+                72
+            ],
+            "distance": [
+                10000,
+                15000,
+                20000
+            ],
+            "interestRateMatrix": [],
+            "residualValueMatrix": []
+        }
+    }
+}
